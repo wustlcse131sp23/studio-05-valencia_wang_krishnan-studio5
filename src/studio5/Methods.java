@@ -16,7 +16,7 @@ public class Methods {
 	public static double distanceBetween(double x1, double y1, double x2, double y2) {
 		double distance = 0;
 		// FIXME: Hint use Math methods (e.g. Math.sqrt) to compute the distance
-		
+		distance=Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
 		return distance;
 	}
 
@@ -34,17 +34,23 @@ public class Methods {
 		// TODO: Draw the remaining rings of the bull's eye
 		// Blue ring with 3.0/4.0 the radius
 		// suggested rgb values: 0, 109, 219
-
+	//	Color blue= new Color(0,109,219);
+		StdDraw.setPenColor(0,109,219);
+		StdDraw.filledCircle(x,y,.75);
 		
 
 		// Red ring with 1.0/2.0 the radius
 		// suggested rgb values: 146, 0, 0
-
+	//	Color red= new Color(146,0,0);
+		StdDraw.setPenColor(146,0,0);
+		StdDraw.filledCircle(x,y,.5);
 		
 
 		// Yellow ring with 1.0/4.0 the radius
 		// suggested rgb values: 255, 255, 109
-
+//		Color yellow= new Color(255,255,109);
+		StdDraw.setPenColor(255,255,109);
+		StdDraw.filledCircle(x,y,.25);
 		
 	}
 
@@ -61,7 +67,18 @@ public class Methods {
 	 */
 	public static String substituteAll(String source, char target, String replacement) {
 		String result = "";
-		// TODO: Finish this method
+////		result=source
+//		// TODO: Finish this method
+//		int len=source.length();
+////		System.out.print(source.charAt(len));
+//		char tar= "";
+//		for (int i=0;i<len;i++) {
+//			tar=source.charAt(i);
+//			if (tar.equal) {
+//				
+//			}
+//		}
+		
 		
 		return result;
 	}
